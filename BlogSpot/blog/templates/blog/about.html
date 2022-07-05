@@ -1,0 +1,50 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="about-section">
+    <h1>About Us Page</h1>
+    </div>
+  
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="{% static 'blog/default.jpg' %}" alt="Aamir" style="width:10%">
+        <div class="container">
+          <h2>Aamir pasha</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>aamir@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="{% static 'blog/default.jpg' %}" alt="Manish" style="width:10%">
+        <div class="container">
+          <h2>Manish Kumar</h2>
+          <p class="title">Art Director</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>manish@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="{% static 'blog/default.jpg' %}" alt="Kundan" style="width:10%">
+        <div class="container">
+          <h2>Kundan Kumar</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>kundan@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
